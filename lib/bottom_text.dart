@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class BottomText extends StatelessWidget {
-  BottomText({this.buttonText, this.normalText});
+  BottomText({this.buttonText, this.normalText, this.onPressed});
 
   String buttonText;
   String normalText;
+  Function onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -22,9 +23,7 @@ class BottomText extends StatelessWidget {
           width: 10,
         ),
         GestureDetector(
-          onTap: () {
-            print("Pressed");
-          },
+          onTap: onPressed,
           child: Text(
             buttonText,
             style: TextStyle(

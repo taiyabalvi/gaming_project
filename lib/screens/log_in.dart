@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:game_project/background_image.dart';
 import 'package:game_project/input_card.dart';
 import 'package:game_project/button_card.dart';
 import 'package:game_project/bottom_text.dart';
 
-class BackgroundImage extends StatelessWidget {
+class ReusableBackgroundImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -84,6 +85,9 @@ class _CardsState extends State<Cards> {
           BottomText(
             normalText: 'Don\'t',
             buttonText: 'Sign Up',
+            onPressed: () {
+              Navigator.pushNamed(context, '/second');
+            },
           ),
         ],
       ),

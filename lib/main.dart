@@ -6,9 +6,9 @@ import 'screens/sign_up.dart';
 void main() {
   runApp(
     MaterialApp(
-      initialRoute: '/second',
+      initialRoute: '/',
       routes: {
-        '/': (context) => BackgroundImage(),
+        '/': (context) => ReusableBackgroundImage(),
         '/second': (context) => SignUP(),
       },
     ),

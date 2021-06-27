@@ -53,6 +53,9 @@ class _SignUPState extends State<SignUP> {
         BottomText(
           normalText: 'Already',
           buttonText: 'Log In',
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
       ],
     );
